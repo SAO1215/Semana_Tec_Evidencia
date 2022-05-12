@@ -10,26 +10,22 @@ Exercises
 
 from turtle import up, goto, down, circle, update, done
 from turtle import setup, hideturtle, tracer, onscreenclick
-
 from freegames import line
 
-
 def grid():
-    """Draw tic-tac-toe grid."""
+    """Dibujar tablero de tic-tac-toe"""
     line(-67, 200, -67, -200)
     line(67, 200, 67, -200)
     line(-200, -67, 200, -67)
     line(-200, 67, 200, 67)
 
-
 def drawx(x, y):
-    """Draw X player."""
+    """Dibujar jugador X"""
     line(x, y, x + 133, y + 133)
     line(x, y + 133, x + 133, y)
 
-
 def drawo(x, y):
-    """Draw O player."""
+    """Dibujar jugador O"""
     up()
     goto(x + 67, y + 5)
     down()
@@ -37,16 +33,17 @@ def drawo(x, y):
 
 
 def floor(value):
-    """Round value down to grid with square size 133."""
+    """Redondear valor hasta la cuadricula con tamañño 133"""
     return ((value + 200) // 133) * 133 - 200
 
 
+"""Variables de estado y jugador a dibujar"""
 state = {'player': 0}
 players = [drawx, drawo]
 
 
 def tap(x, y):
-    """Draw X or O in tapped square."""
+    """Dibujar X o O en el cuadro seleccionado"""
     x = floor(x)
     y = floor(y)
     player = state['player']
