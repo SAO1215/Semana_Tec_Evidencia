@@ -18,6 +18,7 @@ Del código obtenido del sitio Grant  Jenks se realizaron algunas modificaciones
  10. Se estableció función para llenar el arreglo (Línea 81)
  11. Condición para determinar el turno (Líneas 83-87)
  12. Mandar llamar las respectivas funciones de dibujar X o O (Líneas 89-95)
+ 13. Se comprobó y modificó el estilo para cumplir con el PEP8 con ayuda de la herramienta "Flake8"
 
 # Imagen del juego funcional
 ![Screenshot from 2022-05-12 18-48-25](https://user-images.githubusercontent.com/104474575/168185096-d53d809c-8949-4fe7-bbb3-b486809fd5e3.png)
