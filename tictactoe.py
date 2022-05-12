@@ -14,7 +14,6 @@ from freegames import line
 
 board = ["", "", "", "", "", "", "", "", ""]
 
-
 def grid():
     """Dibujar tablero de tic-tac-toe"""
     color("black")
@@ -24,14 +23,13 @@ def grid():
     line(-200, -67, 200, -67)
     line(-200, 67, 200, 67)
 
-
 def drawx(x, y):
     """Dibujar jugador X"""
     color("red")
     width(5)
     line(x + 20, y + 20, x + 120, y + 120)
     line(x + 20, y + 120, x + 120, y + 20)
-
+    
 
 def drawo(x, y):
     """Dibujar jugador O"""
@@ -42,7 +40,7 @@ def drawo(x, y):
     down()
     circle(55)
 
-
+  
 def floor(value):
     """Redondear valor hasta la cuadricula con tamaño 133"""
     return ((value + 200) // 133) * 133 - 200
@@ -61,7 +59,7 @@ def tap(x, y):
     if all(board):
         print("Ya no hay espacio")
         return
-
+    
     """Determinar x y y del area del tablero"""
     x_area = (x + 200) // 133
     y_area = (200 - y) // 133
@@ -79,7 +77,7 @@ def tap(x, y):
 
     """Llenar arreglo con X o O"""
     board[area] = state['player']
-
+    
     """Si el turno es de X, cambiar a O"""
     if state['player'] == "x":
         state['player'] = "o"
@@ -88,12 +86,12 @@ def tap(x, y):
 
     """Dibujar X o O dependiendo del turno"""
     if state['player'] == "x":
-        drawx(x, y)
+        drawx(x,y)
         update()
     else:
         drawo(x, y)
         update()
-
+ 
 
 setup(420, 420, 370, 0)
 hideturtle()
