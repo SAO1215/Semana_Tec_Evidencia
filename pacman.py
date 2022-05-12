@@ -1,12 +1,12 @@
-"""Pacman, classic arcade game.
+"""Pacman, clásico juego de arcade.
 
-Exercises
+Ejercicios
 
-1. Change the board.
-2. Change the number of ghosts.
-3. Change where pacman starts.
-4. Make the ghosts faster/slower.
-5. Make the ghosts smarter.
+1. Cambiar el tablero.
+2. Cambiar el número de fantasmas.
+3. Cambia donde comienza pacman.
+4. Haz que los fantasmas sean más rápidos o más lentos..
+5. Haz que los fantasmas sean más inteligentes.
 """
 
 from random import choice
@@ -52,7 +52,7 @@ tiles = [
 
 
 def square(x, y):
-    """Draw square using path at (x, y)."""
+    """Dibuja un cuadrado usando la ruta en (x, y)."""
     path.up()
     path.goto(x, y)
     path.down()
@@ -66,7 +66,7 @@ def square(x, y):
 
 
 def offset(point):
-    """Return offset of point in tiles."""
+    """Devuelve el desplazamiento del punto en mosaicos."""
     x = (floor(point.x, 20) + 200) / 20
     y = (180 - floor(point.y, 20)) / 20
     index = int(x + y * 20)
@@ -74,7 +74,7 @@ def offset(point):
 
 
 def valid(point):
-    """Return True if point is valid in tiles."""
+    """Retorna True si el punto es válido en mosaicos."""
     index = offset(point)
 
     if tiles[index] == 0:
@@ -89,7 +89,7 @@ def valid(point):
 
 
 def world():
-    """Draw world using path."""
+    """Dibuja el mundo usando la ruta."""
     bgcolor('black')
     path.color('blue')
 
@@ -108,7 +108,7 @@ def world():
 
 
 def move():
-    """Move pacman and all ghosts."""
+    """Mueve pacman y todos los fantasmas."""
     writer.undo()
     writer.write(state['score'])
 
@@ -158,7 +158,7 @@ def move():
 
 
 def change(x, y):
-    """Change pacman aim if valid."""
+    """Cambie el objetivo de pacman si es válido."""
     if valid(pacman + vector(x, y)):
         aim.x = x
         aim.y = y
