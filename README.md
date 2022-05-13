@@ -18,4 +18,6 @@ Del codigo del videojuego memory se hizo lo siguiente:
      6.-Reducimos el delay para agilizar el tiempo de completado
  
 
+ # Funcionamiento visual del codigo en python
  
+ [![ferrari.png](https://i.postimg.cc/7Yv9qtLy/ferrari.png)](https://postimg.cc/F1Z3ZZcP)
