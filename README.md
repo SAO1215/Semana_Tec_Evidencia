@@ -15,7 +15,9 @@ Del codigo del videojuego memory se hizo lo siguiente:
 
      5.-Se pone un solo cuadro con el numero de digito adentro. (Linea: 91)
      
-     6.-Reducimos el delay para agilizar el tiempo de completado. (Linea: 83)
+     6.-Cambiamos los cuadros a mostrar en vez de 8X8 se cambio a 4X4. (Lineas: 20,22,43,48,73)
+     
+     7.-Reducimos el delay para agilizar el tiempo de completado. (Linea: 83)
  
 
  # Funcionamiento visual del codigo en python
