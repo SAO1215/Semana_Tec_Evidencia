@@ -7,7 +7,7 @@ Del codigo del videojuego memory se hizo lo siguiente:
 
      1.-Primeramente empezamos por los comentarios 
 
-     2.-Cambiamos los errores que nos indicaban con flake8
+     2.-Cambiamos los errores que nos indicaban con flake8 para cumplir con el PEP8
 
      3.-Agregamos el contador de taps de manera que se imprimiera tap en la terminal a la hora de darle inicio al juego 
 
