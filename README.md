@@ -15,7 +15,9 @@ Tomando como base el codigo obtenido de FreeGames de 'pacman.py' se hicieron las
 
 # Imagen producto final
 <img width="398" alt="Captura de pantalla 2022-05-12 a las 20 45 29" src="https://user-images.githubusercontent.com/70983072/168195861-02864542-9a07-4e47-90ba-bdc82830a39f.png">
+
 =======
+
 # Tic-Tac-Toe
 Mariana Castro Payns - A01706038
 
