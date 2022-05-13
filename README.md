@@ -14,3 +14,6 @@ Del codigo del videojuego memory se hizo lo siguiente:
      4.-Se detecta cuando se acaban los cuadros por encontrar
 
      5.-Se pone un solo cuadro con el numero de digito adentro
+ 
+ # Funcionamiento visual del codigo en python
+ 
